@@ -3,7 +3,7 @@
  *}
 
 {$component = 'p-form'}
-{component_define_params params=[ 'form', 'action', 'method', 'submit', 'isEdit', 'mods', 'classes', 'attributes' ]}
+{component_define_params params=[ 'form', 'action', 'method', 'submit', 'isEdit', 'mods', 'classes', 'attributes', 'content' ]}
 
 {$action = $action|default:''}
 {$method = $method|default:'post'}
@@ -25,6 +25,7 @@
     {else}
         {$form}
     {/if}
+    {$content}
 
     {component 'admin:button' params=$submit}
 </form>

@@ -92,6 +92,8 @@ jQuery(document).ready(function ($) {
             cities: aRouter.ajax + 'geo/get/cities/'
         }
     });
+    
+    $(".js-fieldset").lsFieldSet();
 
     /**
      * Dropdowns
